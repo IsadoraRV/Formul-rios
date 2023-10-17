@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+    <link rel="stylesheet" href="../material de aula/geral.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <h3>Cadastro</h3>
+    <form action="cadastrar.php">
+        <!--Text texto normal-->
+    <fieldset>
+        <label for="nome">Nome</label><br>
+        <input type=" text " id="nome" placeholder="Insira o seu nome "> <br>
+
+
+        <!--password para senhas -->
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha" placeholder="Insira a sua senha"><br>
+   
+
+        <label for="email">Digite o e-mail</label>
+        <input type="email" id="email" placeholder="Digite o seu e-mail"><br>
+        <!--number para receber valores numericos -->
+        <label for="idade">Dgite a sua idade</label>
+        <input type="number" id="idade" step="1" min="1" max="100" placeholder="Digite a sua idade"><br>
+
+        <label for="dataDeNascimento"> Coloque a sua data de nascimento</label><br>
+        <input type="date" id="dataDeNascimento"><br>
+        
+        <label for="relogio">Coloque a hora do nascimento</label><br>
+        <input type="time" id="relogio"><br>
+
+        <label for="cor">Coloque a sua cor favorita</label><br>
+        <input type="color"><br>
+
+        <label for="foto">Insira uma imagem de perfil</label><br>
+        <input type="file" id="foto"><br>
+
+        <!--Checkbox para verificar se sim ou não -->
+        <label for="mandaEmail">Deseja receber notificações</label>
+        <input type="checkbox" id="mandaEmail">
+
+        <label for="sexo">Qual é o seu sexo?</label><br>
+        Homem<input type="radio" name="" id="">
+        Mulher<input type="radio" name="" id="">
+        Não dizer <input type="radio" name="" id="">
+
+        <!-- SELECT - VÁRIAS OPÇÕES -->
+        <label for="estado">Selecione o estado onde mora</label>
+        <select id="estado">
+                <option value="DF">Distrito Federal</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="AC">Acre</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="BA">Bahia</option>
+
+        </select>
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+
+
+
+        <button type="submit">Cadastrar</button><br>
+        <button type="reset">Refazer formulário</button><br>
+        <!--Submit envia / reset apaga os inputs / -->
+
+    </fieldset>
+
+    </form>
+    
+</body>
+</html>
